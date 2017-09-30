@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/09/2017 20:31:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="controler.Fornecedor" table="fornecedor" catalog="fastDelivery" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nomeFantasia" type="string">
+            <column name="nome_fantasia" length="200" not-null="true" />
+        </property>
+        <property name="razaoSocial" type="string">
+            <column name="razao_social" length="200" not-null="true" />
+        </property>
+        <property name="inscricaoEstad" type="string">
+            <column name="inscricao_estad" length="18" not-null="true" />
+        </property>
+        <property name="cnpj" type="string">
+            <column name="cnpj" length="18" not-null="true" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="12" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="200" not-null="true" />
+        </property>
+        <property name="cep" type="string">
+            <column name="cep" length="200" not-null="true" />
+        </property>
+        <property name="rua" type="string">
+            <column name="rua" length="200" not-null="true" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="bairro" length="200" not-null="true" />
+        </property>
+        <property name="numeroCasa" type="int">
+            <column name="numero_casa" not-null="true" />
+        </property>
+        <property name="uf" type="string">
+            <column name="uf" length="2" not-null="true" />
+        </property>
+        <property name="cidade" type="string">
+            <column name="cidade" length="200" not-null="true" />
+        </property>
+        <property name="parceiro" type="string">
+            <column name="parceiro" length="3" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
